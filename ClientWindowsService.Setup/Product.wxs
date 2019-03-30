@@ -23,15 +23,15 @@
   <Fragment>
     <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
       <Component Id="ProductComponent" Guid="{B0C480D8-5A01-49E5-9DDC-D497CAA646BC}">
-        <File Id="filF89894A10AC0B10B74BFB62B7D268624" Source="$(var.ClientWindowsService.TargetDir)\DesafioIControlSmart.ClientWindowsService.exe" KeyPath="yes"/>
-        <File Id="fil041BD5AFA8190CF0BF5D4B5434FC6638" Source="$(var.ClientWindowsService.TargetDir)\DesafioIControlSmart.ClientWindowsService.exe.config" KeyPath="no" />
+        <File Id="filF89894A10AC0B10B74BFB62B7D268624" Source="$(var.ClientWindowsService.TargetDir)\DesafioControlSmartService.exe" KeyPath="yes"/>
+        <File Id="fil041BD5AFA8190CF0BF5D4B5434FC6638" Source="$(var.ClientWindowsService.TargetDir)\DesafioControlSmartService.exe.config" KeyPath="no" />
         
         <ServiceInstall
           Id="ServiceInstaller"
           Type="ownProcess"
 					Name="MainService"
           DisplayName="Serviço do DesafioControlSmart"
-					Description="Serviço para simulação de acionamento remoto de dispositivos (DesafioControlSmartService)"
+					Description="Serviço para simulação de acionamento remoto de dispositivos (DesafioControlSmart)"
           Account="NT AUTHORITY\NetworkService"
           ErrorControl="ignore"
           Start="auto" />
