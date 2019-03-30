@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{86C4B45D-D369-4E9E-A2D1-5700BA22DA58}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>DesafioIControlSmart.ClientWindowsService</RootNamespace>
-    <AssemblyName>DesafioIControlSmart.ClientWindowsService</AssemblyName>
+    <RootNamespace>DesafioControlSmart.ClientWindowsService</RootNamespace>
+    <AssemblyName>DesafioControlSmartService</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -60,9 +60,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DesafioIControlSmart.Client\DesafioIControlSmart.Client.csproj">
+    <ProjectReference Include="..\DesafioControlSmart.Client\DesafioControlSmart.Client.csproj">
       <Project>{A1B71BA7-8D67-4687-9D59-5F3FC3FF1EE2}</Project>
-      <Name>DesafioIControlSmart.Client</Name>
+      <Name>DesafioControlSmart.Client</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

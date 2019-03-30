@@ -15,7 +15,7 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\DesafioIControlSmart.Data\DesafioIControlSmart.Data.csproj" />
+    <ProjectReference Include="..\DesafioControlSmart.Data\DesafioControlSmart.Data.csproj" />
   </ItemGroup>
 
 </Project>

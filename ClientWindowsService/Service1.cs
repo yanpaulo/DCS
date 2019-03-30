@@ -1,4 +1,4 @@
-﻿using DesafioIControlSmart.Client;
+﻿using DesafioControlSmart.Client;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,7 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesafioIControlSmart.ClientWindowsService
+namespace DesafioControlSmart.ClientWindowsService
 {
     public partial class Service1 : ServiceBase
     {

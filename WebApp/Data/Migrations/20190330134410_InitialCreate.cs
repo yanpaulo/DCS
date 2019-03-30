@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace DesafioIControlSmart.WebApp.Data.Migrations
+namespace DesafioControlSmart.WebApp.Data.Migrations
 {
     public partial class InitialCreate : Migration
     {

@@ -1,4 +1,4 @@
-﻿using DesafioIControlSmart.Data;
+﻿using DesafioControlSmart.Data;
 using Microsoft.AspNetCore.SignalR.Client;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Yansoft.Rest;
 
-using static DesafioIControlSmart.Data.DataConstants;
+using static DesafioControlSmart.Data.DataConstants;
 
-namespace DesafioIControlSmart.Client
+namespace DesafioControlSmart.Client
 {
     public class App
     {

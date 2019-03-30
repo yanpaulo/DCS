@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{8B74DF85-DC36-4650-A83C-76DF53960874}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesafioIControlSmart.Data", "DesafioIControlSmart.Data\DesafioIControlSmart.Data.csproj", "{F0461EEE-B9E4-4527-AF5E-80D879DB1C2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesafioControlSmart.Data", "DesafioControlSmart.Data\DesafioControlSmart.Data.csproj", "{F0461EEE-B9E4-4527-AF5E-80D879DB1C2F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesafioIControlSmart.Client", "DesafioIControlSmart.Client\DesafioIControlSmart.Client.csproj", "{A1B71BA7-8D67-4687-9D59-5F3FC3FF1EE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesafioControlSmart.Client", "DesafioControlSmart.Client\DesafioControlSmart.Client.csproj", "{A1B71BA7-8D67-4687-9D59-5F3FC3FF1EE2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApp", "ClientApp\ClientApp.csproj", "{23E45BAB-36E0-45DF-B70E-592D6044CC23}"
 EndProject

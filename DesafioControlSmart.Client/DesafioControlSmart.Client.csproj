@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>DesafioControlSmart.Client</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DesafioIControlSmart.Data\DesafioIControlSmart.Data.csproj" />
+    <ProjectReference Include="..\DesafioControlSmart.Data\DesafioControlSmart.Data.csproj" />
   </ItemGroup>
 
 </Project>

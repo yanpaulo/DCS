@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace DesafioIControlSmart.Data
+namespace DesafioControlSmart.Data
 {
     public class DeviceEvent
     {

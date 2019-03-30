@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using DesafioIControlSmart.Data;
-using DesafioIControlSmart.WebApp.Data;
+using DesafioControlSmart.Data;
+using DesafioControlSmart.WebApp.Data;
 
-namespace DesafioIControlSmart.WebApp.Controllers
+namespace DesafioControlSmart.WebApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

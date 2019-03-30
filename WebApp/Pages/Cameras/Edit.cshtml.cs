@@ -6,16 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using DesafioIControlSmart.Data;
-using DesafioIControlSmart.WebApp.Data;
+using DesafioControlSmart.Data;
+using DesafioControlSmart.WebApp.Data;
 
-namespace DesafioIControlSmart.WebApp.Pages.Cameras
+namespace DesafioControlSmart.WebApp.Pages.Cameras
 {
     public class EditModel : PageModel
     {
-        private readonly DesafioIControlSmart.WebApp.Data.ApplicationDbContext _context;
+        private readonly DesafioControlSmart.WebApp.Data.ApplicationDbContext _context;
 
-        public EditModel(DesafioIControlSmart.WebApp.Data.ApplicationDbContext context)
+        public EditModel(DesafioControlSmart.WebApp.Data.ApplicationDbContext context)
         {
             _context = context;
         }

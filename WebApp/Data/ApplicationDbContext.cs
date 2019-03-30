@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using DesafioIControlSmart.Data;
+using DesafioControlSmart.Data;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace DesafioIControlSmart.WebApp.Data
+namespace DesafioControlSmart.WebApp.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {

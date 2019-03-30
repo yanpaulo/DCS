@@ -10,13 +10,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using DesafioIControlSmart.WebApp.Data;
+using DesafioControlSmart.WebApp.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using DesafioIControlSmart.WebApp.Services;
-using DesafioIControlSmart.Data;
+using DesafioControlSmart.WebApp.Services;
+using DesafioControlSmart.Data;
 
-namespace DesafioIControlSmart.WebApp
+namespace DesafioControlSmart.WebApp
 {
     public class Startup
     {

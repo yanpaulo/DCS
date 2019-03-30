@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>DesafioControlSmart.Data</AssemblyName>
+    <RootNamespace>DesafioControlSmart.Data</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

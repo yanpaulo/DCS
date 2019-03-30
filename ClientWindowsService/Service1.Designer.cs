@@ -1,4 +1,4 @@
-﻿namespace DesafioIControlSmart.ClientWindowsService
+﻿namespace DesafioControlSmart.ClientWindowsService
 {
     partial class Service1
     {

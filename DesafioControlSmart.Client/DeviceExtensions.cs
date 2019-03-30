@@ -1,10 +1,10 @@
-﻿using DesafioIControlSmart.Data;
+﻿using DesafioControlSmart.Data;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesafioIControlSmart.Client
+namespace DesafioControlSmart.Client
 {
     public static class DeviceExtensions
     {

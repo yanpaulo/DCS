@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DesafioIControlSmart.Data;
-using DesafioIControlSmart.WebApp.Data;
-using DesafioIControlSmart.WebApp.Services;
+using DesafioControlSmart.Data;
+using DesafioControlSmart.WebApp.Data;
+using DesafioControlSmart.WebApp.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 
-namespace DesafioIControlSmart.WebApp.Controllers
+namespace DesafioControlSmart.WebApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
