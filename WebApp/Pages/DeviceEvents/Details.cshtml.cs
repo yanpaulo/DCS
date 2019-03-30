@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using DesafioControlSmart.Data;
 using DesafioControlSmart.WebApp.Data;
 
-namespace DesafioControlSmart.WebApp.Pages.Gates
+namespace DesafioControlSmart.WebApp.Pages.DeviceEvents
 {
     public class DetailsModel : PageModel
     {
