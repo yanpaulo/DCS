@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <ComponentGroup Id="Dependencies">
+      <Component Id="cmpBFB05CEE971EDD4FB1DD9C0FC7786879" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil94A3DC12A8991EDBAA4511660430D5FE" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\DesafioIControlSmart.Client.dll" />
+      </Component>
+      <Component Id="cmp052762CB31972D4B8ADD3B67AD277093" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filF055C232AFD3052608C3A7F6DE88B3D8" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\DesafioIControlSmart.Client.pdb" />
+      </Component>
+      <Component Id="cmp526C5CF2C0F90BA06B86A58A9725CDCD" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filED1586054340B0E9312E997FEDCA97BC" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\DesafioIControlSmart.ClientWindowsService.pdb" />
+      </Component>
+      <Component Id="cmp77D5211C9E2B741376BE8A2E81A9798B" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil97CF999681FF284B4E4C621CB98FC996" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\DesafioIControlSmart.Data.dll" />
+      </Component>
+      <Component Id="cmpC4BD935E831218AE9FEDC776C4B160CB" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filC344CE5502B7917C440F5FD64A813E26" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\DesafioIControlSmart.Data.pdb" />
+      </Component>
+      <Component Id="cmp9853B57A0FED4A0CD42E75AF7D56EC0B" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filD24FF58FED15A145F2864E7E0988CFDA" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.AspNetCore.Connections.Abstractions.dll" />
+      </Component>
+      <Component Id="cmpD9E459E7C8A4389BE8DA2EA87B1737EB" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filF3ED18C00C3A23EBEBB93499D570EFEC" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.AspNetCore.Http.Connections.Client.dll" />
+      </Component>
+      <Component Id="cmp4F210A7B39FF21B2913CA8D6C4454DB1" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil915256F80E932A6F49345EB0D605C2F4" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.AspNetCore.Http.Connections.Common.dll" />
+      </Component>
+      <Component Id="cmp1D53884D4C58EFCC93A45FE29FA54E1E" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil0C568455C125704F4792D0939192538E" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.AspNetCore.Http.Features.dll" />
+      </Component>
+      <Component Id="cmpC420944103C6297FB48B2F979B7E537B" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil982E350850488FD2DAE223A8577F2845" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.AspNetCore.SignalR.Client.Core.dll" />
+      </Component>
+      <Component Id="cmpECB06A026E002A522B76ADB90F431E8C" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil62761226534DBBE5558D23972B1BD35C" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.AspNetCore.SignalR.Client.dll" />
+      </Component>
+      <Component Id="cmpE2B8D8F02195959029890EC727738E7B" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil54A4D2B9AFA0171F4D69325FB48B3FAE" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.AspNetCore.SignalR.Common.dll" />
+      </Component>
+      <Component Id="cmp5B2AE6352E23191280BCFD6EA97C26A7" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filA24E4F2893D69BD7BC545D2AC02273E0" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.AspNetCore.SignalR.Protocols.Json.dll" />
+      </Component>
+      <Component Id="cmpD2C6EADD3F554D9995E829BFE70F311A" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil5F4E10CEBA19DEAB9B971F447574D2D3" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.Extensions.Configuration.Abstractions.dll" />
+      </Component>
+      <Component Id="cmp9C7DB648F3AD5AB95C4E23EB157B191A" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil44DD36624D3E4890DE8AD6BE67C48A10" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.Extensions.Configuration.Binder.dll" />
+      </Component>
+      <Component Id="cmp2518D989386235A47712FE36262ABD5E" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filF8F17CA7306D93951E70DB30499ED208" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.Extensions.Configuration.dll" />
+      </Component>
+      <Component Id="cmpF5AE9C3A239AC41AF7432FD5DEDE7884" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil253D8E53300E6060A18F0A312C065597" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+      </Component>
+      <Component Id="cmpF8C3C8AD4AC8F60020035E15A331F0AE" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil055A70CC80C4D64E41622C325770FDF5" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.Extensions.DependencyInjection.dll" />
+      </Component>
+      <Component Id="cmp53AC42F28178D89E9638D50D68A268E3" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil7602E4A5148CF00FF0E872AF1C633A2B" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.Extensions.Logging.Abstractions.dll" />
+      </Component>
+      <Component Id="cmpBE82C31FAF9B3B96732CE1165B165D5C" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil632BE5A4CBC255E0261FDDD872F61A83" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.Extensions.Logging.dll" />
+      </Component>
+      <Component Id="cmp7ED6510D7050B9D919988C984806E49A" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filD7034C06C8E8F2F7666FE6CB96FA5268" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.Extensions.Options.dll" />
+      </Component>
+      <Component Id="cmp4135D375DB86EF266AFA97D83256D4DF" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil7F8DEA25082C651AF54E3B8328902F74" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.Extensions.Primitives.dll" />
+      </Component>
+      <Component Id="cmp573EF187BDA78362A931FBB455AD2A9F" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil096D12D4A31569445DF0C559944334C1" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Microsoft.Win32.Primitives.dll" />
+      </Component>
+      <Component Id="cmp528913703DA63681EBBA193D4B9B0319" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filA217240D4A79CCF85DAC03E0639F0731" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\netstandard.dll" />
+      </Component>
+      <Component Id="cmp7058DC2B4AACAC21ECFC49802D96DBEB" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filA80472416F188CC7AFA40E07268FE30C" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Newtonsoft.Json.dll" />
+      </Component>
+      <Component Id="cmp00432682F54CA6903540DF365B68BA53" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filAF3EEDAEE3A65E0AF8A4CA1A471DCD54" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\Newtonsoft.Json.pdb" />
+      </Component>
+      <Component Id="cmpA6B0383DB9F04B0EB43BB7BFDE1ED2F8" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil5EF1D83046887C6FAE96566E38346E30" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\RestHttpClient.dll" />
+      </Component>
+      <Component Id="cmp45F4FAF1346FEB6D2BFDAF8EABD03B9B" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filC34D709F7C7274D141E4A0F8B3DFA450" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.AppContext.dll" />
+      </Component>
+      <Component Id="cmpB9A9EEB5A9B905F4CDA9F976B54F8BA4" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filBB771E7EAA3E3AC59BAFE30DCBF024B2" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Buffers.dll" />
+      </Component>
+      <Component Id="cmpF0707E47D3E690252D67EE10D4C988F0" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil0723B1D240204080CF8F1A9B46219369" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Collections.Concurrent.dll" />
+      </Component>
+      <Component Id="cmpCF3AA069C756AC7AE39882742C5D15A4" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil636229CE0270CE5D7B3C7841D2E6EF3E" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Collections.dll" />
+      </Component>
+      <Component Id="cmp380E7609B9BEDAC4328DC7287BDA2891" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filF58F39C2E153413CFAA858446C88D342" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Collections.NonGeneric.dll" />
+      </Component>
+      <Component Id="cmp188BBB4617F3A0E4312CED372D64439E" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filA7DB787A5152F7F126FEC5F1A5782C49" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Collections.Specialized.dll" />
+      </Component>
+      <Component Id="cmpF5488F0E266892B391BB003ADDF67BBA" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filC6D506886DC7B265D163964776EE0829" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.ComponentModel.Annotations.dll" />
+      </Component>
+      <Component Id="cmp9F034DA068F6B95509F7973C361370CD" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil39B246B37B8740C23788CE67B168F2BC" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.ComponentModel.dll" />
+      </Component>
+      <Component Id="cmp484BB2E4CC24943019AB17007466DCC4" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil206208EE3FEF6532D9AD970862CE56C8" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.ComponentModel.EventBasedAsync.dll" />
+      </Component>
+      <Component Id="cmpCC75E89F82C390CC081B7F3C9421FE31" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filD5D4D8A6AAB36E8852176BA57FB2EF5D" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.ComponentModel.Primitives.dll" />
+      </Component>
+      <Component Id="cmpE7836C44213C48C69547B9925ACA4CE2" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filEED2A26A4DCD4FF67EF3FD3BE4E75397" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.ComponentModel.TypeConverter.dll" />
+      </Component>
+      <Component Id="cmp41483DDF1D43E57F23DF628AAD80B314" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil33FD45C4E2ADCF93834A75FD4B0301CB" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Console.dll" />
+      </Component>
+      <Component Id="cmp263645061F85FF8F3C9C6A9BF8963C98" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filEEFDB1E2B7B8DA469F5315F99CB740CB" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Data.Common.dll" />
+      </Component>
+      <Component Id="cmp335082FDE6E63BB91ED108E7C29495FB" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil603DD4F09E4108ED8261E267B6D2C094" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Diagnostics.Contracts.dll" />
+      </Component>
+      <Component Id="cmpB7859BC7261DBCD6B54E0A88FAC55FDB" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filF1FDAB68340905F2264C12579A8906D5" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Diagnostics.Debug.dll" />
+      </Component>
+      <Component Id="cmp69F60043F1CDE875CB17BD4975AF142D" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filDAD0C59C09E4A630914995E0C58AF512" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Diagnostics.FileVersionInfo.dll" />
+      </Component>
+      <Component Id="cmpB05AC3909AFC1241EEAEE7C2DB701B52" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil3D669C136EC2E7C5E660170FEA8D9F31" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Diagnostics.Process.dll" />
+      </Component>
+      <Component Id="cmp1A7D648BB964E2E8FCDD7EE30E818057" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil1D5CAE73F77B43E2E0D28D206067020B" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Diagnostics.StackTrace.dll" />
+      </Component>
+      <Component Id="cmp28D4DA90C02AC1540B1216F7B26030E5" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil542208CF611A5142CEC13B86EE8E246D" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Diagnostics.TextWriterTraceListener.dll" />
+      </Component>
+      <Component Id="cmp82EE86A0FE7952FA970E3E46E463B0EE" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil2BCA9E8230E3C1A90426C06D20AB2AEB" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Diagnostics.Tools.dll" />
+      </Component>
+      <Component Id="cmp3743CF3A1F4F9C9ED70F5AFA9EF07973" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil189D65D437366A58F2DB165AD49B8BCB" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Diagnostics.TraceSource.dll" />
+      </Component>
+      <Component Id="cmp61AA5EA00F50DE241798DC6833F4B1EC" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil36FC5A8683E01823F6C6F4BD94271952" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Diagnostics.Tracing.dll" />
+      </Component>
+      <Component Id="cmpEC87DB7A0650B5FD11B8E3F110AC1DF7" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil9545148960A8F8427B65E132034F14BA" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Drawing.Primitives.dll" />
+      </Component>
+      <Component Id="cmp750751AB344248A36FFB756C8A10FF26" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil72D46CC8C4A8CD5C9C1C77013AECDC71" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Dynamic.Runtime.dll" />
+      </Component>
+      <Component Id="cmp19221FFCF5C73EEB275EDB1F5DB3D2B8" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filB069DA651E618E17D0B80A561EF4D6DD" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Globalization.Calendars.dll" />
+      </Component>
+      <Component Id="cmp09E405BE6A2A2E3B47F4523CB2F3F24A" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil7F4BC5EA49314F5098191CCE67E4742B" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Globalization.dll" />
+      </Component>
+      <Component Id="cmp06F1B4D7F7B3116D190BAC44A64C993D" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filFDACF8FF23F52672E1D9A2F1C489D4E3" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Globalization.Extensions.dll" />
+      </Component>
+      <Component Id="cmpE95F7D40254070879D1AC6A4424CF962" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil85B2820D0A9ECDCB4DE2F0124D5F83B6" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.IO.Compression.dll" />
+      </Component>
+      <Component Id="cmpC1F9690D6C941FECB9322EC7CD2936DA" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil72B967AC8716D9E5370018EF508A0018" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.IO.Compression.ZipFile.dll" />
+      </Component>
+      <Component Id="cmpD0185CA0779BC8BC75DAA8D6FBE51147" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil4D66DE82A2DBA1DC37EFE6A4FAA81704" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.IO.dll" />
+      </Component>
+      <Component Id="cmp92267CB2AD2BA7FB8DA8E570AB881BED" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filBA1D6807970028D313FAFAC1EDA9DE30" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.IO.FileSystem.dll" />
+      </Component>
+      <Component Id="cmpDE61571AAD0774AF2647547A1627B74B" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filB41F3C0BE6AF4B6081C13CDBC5D4FEA3" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.IO.FileSystem.DriveInfo.dll" />
+      </Component>
+      <Component Id="cmpD3E693015E1F9DA70CE41D89138CDDFB" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil05045BD9406158753BD6471590F7F07F" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.IO.FileSystem.Primitives.dll" />
+      </Component>
+      <Component Id="cmpC42817E3E2C6F8BB45F71F27A444D827" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filBFCD22A3F72571896E6C9228B7DC09E6" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.IO.FileSystem.Watcher.dll" />
+      </Component>
+      <Component Id="cmpD7E599257A08A7112A1CCA979EE247EA" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filE19AF55AC126BCB8BE69B354F7CD3FF6" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.IO.IsolatedStorage.dll" />
+      </Component>
+      <Component Id="cmp720D85563895E77E778EE0F5C4EF6860" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filE9E857CC5A9BEBBB71044DA7B848AFA8" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.IO.MemoryMappedFiles.dll" />
+      </Component>
+      <Component Id="cmp0750269539EB5900474D6CF49F0F4B18" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil7EF75406F90F1CF7C155238AAEEF510D" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.IO.Pipelines.dll" />
+      </Component>
+      <Component Id="cmpB49A1EA13678E9E3C06CA658BF847F4A" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil42F676C0462B03C4A1C6F16030C73CF8" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.IO.Pipes.dll" />
+      </Component>
+      <Component Id="cmp43A01FFD30E8667A98B02E10E9EA9AE3" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filC4A1654DD5C320D7287ABEE0860AFF54" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.IO.UnmanagedMemoryStream.dll" />
+      </Component>
+      <Component Id="cmpD15C18BCEFB6037309149EA5A64BC13A" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filC720A62B1110AD2AF5DDD9A670B5207B" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Linq.dll" />
+      </Component>
+      <Component Id="cmpF3CD822CB442B5D372C4F77523659262" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil5FFD011C5256EDCBF100FEA2C2523EC2" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Linq.Expressions.dll" />
+      </Component>
+      <Component Id="cmpCFC3A3344E57B861854A48CBFE371584" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil1D3A18DE46BB9D26A5CEF578BE3584E6" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Linq.Parallel.dll" />
+      </Component>
+      <Component Id="cmp024BD1E62E4FCB2EF8A9A18E778CED96" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil147E2A49766FB5129625BED210D8714F" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Linq.Queryable.dll" />
+      </Component>
+      <Component Id="cmpF9A89C78222519AB1A6CC637B59B9F0E" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil974972BB25BEA2E9D68588B697D2042B" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Memory.dll" />
+      </Component>
+      <Component Id="cmp693828DEFF24FEEA9D41228A0BFF22EF" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filB2DABE3FCA1BE9ECEBF74A0071CC133F" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Net.Http.dll" />
+      </Component>
+      <Component Id="cmp2987CFA3ED162D93E34C24A05AFC077C" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil22A0C827F5493A16CDDDEC3441A57442" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Net.NameResolution.dll" />
+      </Component>
+      <Component Id="cmp66F8FF1A9B4202F1D627F8F08C99EA22" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil6BCD3BAB1D040EA875969F1F980F98A6" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Net.NetworkInformation.dll" />
+      </Component>
+      <Component Id="cmpD59F8C392D2860B4AA710A4B937E8858" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil7D194097B5017A972F75C46023479A9E" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Net.Ping.dll" />
+      </Component>
+      <Component Id="cmp72DFCFEE25E3B557DC384B85C19E3DF1" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filC817E62FEEE1934C6545EA4BCAEC3840" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Net.Primitives.dll" />
+      </Component>
+      <Component Id="cmp688C97BE77D17AF2D84F1CA1E543092B" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil1356AFFF23122D9286FF9445D560F94E" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Net.Requests.dll" />
+      </Component>
+      <Component Id="cmpAA21AE28937E70C3015355D9B8ACF691" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filEC745B7A2E3AAF800F1566E3D20AC568" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Net.Security.dll" />
+      </Component>
+      <Component Id="cmpEEA07A5289B56A3AD735B2340E5A13E5" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil8719A4B944D46645453B3F0DAFE82FDF" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Net.Sockets.dll" />
+      </Component>
+      <Component Id="cmpE25B7617FD686E813C0B6C459B0DCFDC" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil864D4E477452C7D423E94B2D9B65BD27" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Net.WebHeaderCollection.dll" />
+      </Component>
+      <Component Id="cmp87852744DE481A14E29D42A93D389BAA" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil1673CA60A0F36BB0FA76A01F5BD51E01" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Net.WebSockets.Client.dll" />
+      </Component>
+      <Component Id="cmp2F861963E33A2F9A969C3779D2CBD6B3" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filA10DB7F55E6B6FF16A7A7EAC7759CEE2" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Net.WebSockets.dll" />
+      </Component>
+      <Component Id="cmpE66364DFF9FAFB0297062C50394BE2F0" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil9DD248B8C8BDC6435485422206D75E4D" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Numerics.Vectors.dll" />
+      </Component>
+      <Component Id="cmp8AA35726AF51CF6F1C729931F88BF035" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil426AD65BFCD7676C8263B2DD94E163DC" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.ObjectModel.dll" />
+      </Component>
+      <Component Id="cmpFE8D8409A41530EF7FDCA4C5517295B3" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filB01DBA77770F185D1DEC1F5B807D920A" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Reflection.dll" />
+      </Component>
+      <Component Id="cmp285BB2DB3BE407D202FF5E96BB12885E" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil47440C1E90189FB0A0051ADE5E0169A7" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Reflection.Extensions.dll" />
+      </Component>
+      <Component Id="cmp718B3FB18B907DF9BE5D146177B7D728" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil9966D260BCDFC4B76BB40F7BAB2DAD0A" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Reflection.Primitives.dll" />
+      </Component>
+      <Component Id="cmpD3CACA1F5E5009D0DAE6B524A4B1F602" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil70B69CB5BFE21717C981559C0C2273B8" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Resources.Reader.dll" />
+      </Component>
+      <Component Id="cmp28D94CEA2FD5A5A776E80E97DDB01BE1" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil043157AB2EAC8F564E1505864DB98BD9" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Resources.ResourceManager.dll" />
+      </Component>
+      <Component Id="cmpD0A5A0092070E3528E26829C8AA0D405" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filB912137C2779E005A2A05AB2DD03C378" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Resources.Writer.dll" />
+      </Component>
+      <Component Id="cmpBDA66401EF4729AFE0DF571B2D78BD67" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil303685AC479596AFC54AD93257E96A9C" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Runtime.CompilerServices.Unsafe.dll" />
+      </Component>
+      <Component Id="cmp14E5B3AEBC975D45C5BB498F4FE6DF04" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil9FE635BA938FA54A3E71778E7F66D64F" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Runtime.CompilerServices.VisualC.dll" />
+      </Component>
+      <Component Id="cmp5D93C9D86927F293880E5ED52B0D914D" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filF9CDFEF7C7757DFA2525BB0A4FCC9A2B" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Runtime.dll" />
+      </Component>
+      <Component Id="cmpF12225983C0F256B5B5B3A1845BC14BB" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filBB99DB43F23F0B8EBCE8EECDE5772F20" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Runtime.Extensions.dll" />
+      </Component>
+      <Component Id="cmpF8A6BB65089CC69AD33F73869CB54E3B" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil64F0B4951AD561A04CF87156D3082F9B" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Runtime.Handles.dll" />
+      </Component>
+      <Component Id="cmp85824B73D77C461B01450BDE8A5DE9D0" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil3FAEC83F528BE3A8F7FFCA03205A4990" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Runtime.InteropServices.dll" />
+      </Component>
+      <Component Id="cmp26F16C97EBA4094334073B64D077D2EF" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil21776C6611F3CEDE221B8508F6FA58F7" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Runtime.InteropServices.RuntimeInformation.dll" />
+      </Component>
+      <Component Id="cmp755645138AF00D0C58BCB885DB43D278" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil050C7554E2F396F47522C7E12A688B37" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Runtime.Numerics.dll" />
+      </Component>
+      <Component Id="cmp6859027B5306C8D387D0760BD957D482" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil6189C4778C4BFD54A1CA988122D46188" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Runtime.Serialization.Formatters.dll" />
+      </Component>
+      <Component Id="cmp9CBBF5D03E342C1F504DE07F9D67E5EE" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filB5848D7B914623A1E1BE5B700E8D696D" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Runtime.Serialization.Json.dll" />
+      </Component>
+      <Component Id="cmp818C5FBA2D20F68BE4F18311F19CD32C" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil6DC8A0086465EC4118F4E2F5524E767E" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Runtime.Serialization.Primitives.dll" />
+      </Component>
+      <Component Id="cmp41F995441173AEA4EF8DA125FB1ECB85" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil8B980DBAD09B139ED28E96E0AC4B6EC0" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Runtime.Serialization.Xml.dll" />
+      </Component>
+      <Component Id="cmp9F59589FB64B0B6A63CF2459C0CA49CD" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filCC6C5CEAFAD699A84E2BDB6613726933" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Security.Claims.dll" />
+      </Component>
+      <Component Id="cmp63E7273214D4A3F962A5EBE85565366D" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil33CA020D85F86A288CBA96F5876DEB50" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Security.Cryptography.Algorithms.dll" />
+      </Component>
+      <Component Id="cmp69A7F4D65643F5EFDC7848C29B969DE0" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filA7C20ABD21FD2459ED87A37082D48284" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Security.Cryptography.Csp.dll" />
+      </Component>
+      <Component Id="cmp9E45F66146E8A7ABF09817BB743DC70F" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil6862A3FA9726F708A9BDB884C0903BBA" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Security.Cryptography.Encoding.dll" />
+      </Component>
+      <Component Id="cmpA552D08C6C44C215B0FFCF8F0A645ACF" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filDE5C831BAF3246EE1B29598E3FFDC62B" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Security.Cryptography.Primitives.dll" />
+      </Component>
+      <Component Id="cmp6EACF755BD291BD0F1FE81B1B2F113F6" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filB70F45D4C7ABBE41E910DB597F87D4E2" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Security.Cryptography.X509Certificates.dll" />
+      </Component>
+      <Component Id="cmp8358B6D056AE775699B6CE57C8AEE952" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filAAC2A6A0E9A48C59119866361797A9C4" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Security.Principal.dll" />
+      </Component>
+      <Component Id="cmp097A3792A16B720BC2B8384AAE2C6E0A" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filE22EA3EF59409D302A86DEC287ECD4BA" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Security.SecureString.dll" />
+      </Component>
+      <Component Id="cmp25EE9FCEE7DD86889F6E889C81A93273" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil0C997A9C96769D38874B9D4B3983D06B" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Text.Encoding.dll" />
+      </Component>
+      <Component Id="cmpA9B321631C9625CFF0CE47FB43CD33AF" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil65C38DC15163157600BD40BCEBA78EAE" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Text.Encoding.Extensions.dll" />
+      </Component>
+      <Component Id="cmp1E83CECB18499E932C0B0189A5262095" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filED296A118348EAE054EF92E7F66AFFA8" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Text.RegularExpressions.dll" />
+      </Component>
+      <Component Id="cmp4A14A6E7B496A6F93F7F88B20A42698C" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil409688B01501D19F2B6BA52D06F8CD41" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Threading.Channels.dll" />
+      </Component>
+      <Component Id="cmp24FEFEEE524814188EF74FA45609A6DF" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil745A3670F412982760DD5D0333FD912F" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Threading.dll" />
+      </Component>
+      <Component Id="cmpA73F7A22526BD763AD79ED6A55F632AB" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil185457EE49F92FCD38C563331C477164" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Threading.Overlapped.dll" />
+      </Component>
+      <Component Id="cmpFF5C423EF7DDE6837C428DEA29AD031A" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filF75D2537E5B21DD765821F817968EAA6" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Threading.Tasks.dll" />
+      </Component>
+      <Component Id="cmpE7D47E39DD72B0C9254C0D5CF628200F" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filB8D5F95D6BEC623C0CE5112026669907" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Threading.Tasks.Extensions.dll" />
+      </Component>
+      <Component Id="cmp53F47C09331DC45DEFD77964C8746E00" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil43398BC2EDD0146C1D4308CE8A739A21" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Threading.Tasks.Parallel.dll" />
+      </Component>
+      <Component Id="cmp1A2BE77AF2A7CFE824AA64AA520417E5" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil99DDCC29E2377A4C0816876771DC319E" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Threading.Thread.dll" />
+      </Component>
+      <Component Id="cmp6288C62F0267EB3A321F7B52BB6FB8BD" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil56EFD1AF486DD6F7BB5D119CFC4ABEA9" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Threading.ThreadPool.dll" />
+      </Component>
+      <Component Id="cmp27F1290B7F77C71975D899718342D022" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filE57AA0CEF9F6719647069E33864F992E" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Threading.Timer.dll" />
+      </Component>
+      <Component Id="cmp7E8CAD5C24ED62FD43376C2EEEF66F1F" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil7B72271133BF78267008DE2AB18828D3" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.ValueTuple.dll" />
+      </Component>
+      <Component Id="cmpBDDFB7F5475C5AEC615B88618EA602A5" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil59E6099AE072BF43D9D49B283CF0DF10" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Xml.ReaderWriter.dll" />
+      </Component>
+      <Component Id="cmp3E906FE09FA284E57B69AE4119FF8A39" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil2AED0C2439912F17E6482A63FC366DF3" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Xml.XDocument.dll" />
+      </Component>
+      <Component Id="cmpC08A3FEDEEA97E24CFE92D529D1E794B" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil70DE08724F846DEF9B587C18382F5909" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Xml.XmlDocument.dll" />
+      </Component>
+      <Component Id="cmpEFC43F362995D01489145F0417DCDA3D" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil292F077141547465AF6AE3E472B81D48" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Xml.XmlSerializer.dll" />
+      </Component>
+      <Component Id="cmpD152850AE3F1F5208AE220B8331DE38D" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="fil245EA129FEAD9FA0A9567ABE754C9F66" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Xml.XPath.dll" />
+      </Component>
+      <Component Id="cmpA042ACAED0055F179BBF5C6CAC964B00" Directory="INSTALLFOLDER" Guid="*">
+        <File Id="filAA3F7F58F101B0ABE801A4E5487C0F56" KeyPath="yes" Source="$(var.ClientWindowsService.TargetDir)\System.Xml.XPath.XDocument.dll" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

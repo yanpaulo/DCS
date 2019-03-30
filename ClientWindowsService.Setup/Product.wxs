@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="*" Name="Serviço DesafioControlSmart" Language="1033" Version="1.0.0.0" Manufacturer="" UpgradeCode="06f5ce49-049c-4dde-abe0-9df5e9107a53">
+  <Product Id="*" Name="DesafioControlSmart" Language="1033" Version="1.0.0.0" Manufacturer="CSharp" UpgradeCode="06f5ce49-049c-4dde-abe0-9df5e9107a53">
     <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
-    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
-    <MediaTemplate />
+    <MajorUpgrade DowngradeErrorMessage="Uma versao mais recente do [ProductName] ja esta instalada." />
+    <MediaTemplate EmbedCab="yes" />
 
-    <Feature Id="ProductFeature" Title="Serviço DesafioControlSmart" Level="1">
+    <Feature Id="ProductFeature" Title="DesafioControlSmart" Level="1">
+      <ComponentGroupRef Id="Dependencies" />
       <ComponentGroupRef Id="ProductComponents" />
     </Feature>
   </Product>
 
   <Fragment>
-    <Directory Id="TARGETDIR" Name="Serviço DesafioControlSmart">
+    <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
-        <Directory Id="INSTALLFOLDER" Name="Serviço DesafioControlSmart" />
+        <Directory Id="INSTALLFOLDER" Name="DesafioControlSmart" />
       </Directory>
     </Directory>
   </Fragment>
@@ -22,17 +23,22 @@
   <Fragment>
     <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
       <!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
-      <Component Id="ProductComponent">
+      
+      <Component Id="ProductComponent" Guid="{B0C480D8-5A01-49E5-9DDC-D497CAA646BC}">
+        <File Id="filF89894A10AC0B10B74BFB62B7D268624" Source="$(var.ClientWindowsService.TargetDir)\DesafioIControlSmart.ClientWindowsService.exe" KeyPath="yes"/>
+        <File Id="fil041BD5AFA8190CF0BF5D4B5434FC6638" Source="$(var.ClientWindowsService.TargetDir)\DesafioIControlSmart.ClientWindowsService.exe.config" KeyPath="no" />
         
-        <ServiceInstall Id="ServiceInstaller"
+        <ServiceInstall
+          Id="ServiceInstaller"
           Type="ownProcess"
-          Name="AppService"
-          DisplayName="Serviço do DesafioControlSmart"
-          Description="Serviço que simula a ativação de dispositivos controlados remotamente."
-          Start="auto"
-          ErrorControl="normal" />
+					Name="DesafioControlSmartService"
+          DisplayName="DesafioControlSmart"
+					Description="DesafioControlSmart"
+          Account="NT AUTHORITY\NetworkService"
+          ErrorControl="ignore"
+          Start="auto" />
 
-        <ServiceControl Id="StartService" Start="install" Stop="both" Remove="uninstall" Name="AppService" Wait="yes" />
+        <ServiceControl Id="StartService" Stop="both" Start="install" Remove="uninstall" Name="DesafioControlSmartService" Wait="yes" />
       </Component>
     </ComponentGroup>
   </Fragment>

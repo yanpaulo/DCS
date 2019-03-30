@@ -19,10 +19,11 @@
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Dependencies.wxs" />
     <Compile Include="Product.wxs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DesafioIControlSmart.ClientWindowsService\ClientWindowsService.csproj">
+    <ProjectReference Include="..\ClientWindowsService\ClientWindowsService.csproj">
       <Name>ClientWindowsService</Name>
       <Project>{86c4b45d-d369-4e9e-a2d1-5700ba22da58}</Project>
       <Private>True</Private>
