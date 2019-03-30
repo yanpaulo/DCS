@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "DesafioIControlSmart.WebApp\WebApp.csproj", "{8B74DF85-DC36-4650-A83C-76DF53960874}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{8B74DF85-DC36-4650-A83C-76DF53960874}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesafioIControlSmart.Data", "DesafioIControlSmart.Data\DesafioIControlSmart.Data.csproj", "{F0461EEE-B9E4-4527-AF5E-80D879DB1C2F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesafioIControlSmart.Client", "DesafioIControlSmart.Client\DesafioIControlSmart.Client.csproj", "{A1B71BA7-8D67-4687-9D59-5F3FC3FF1EE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApp", "DesafioIControlSmart.ClientApp\ClientApp.csproj", "{23E45BAB-36E0-45DF-B70E-592D6044CC23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApp", "ClientApp\ClientApp.csproj", "{23E45BAB-36E0-45DF-B70E-592D6044CC23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientWindowsService", "DesafioIControlSmart.ClientWindowsService\ClientWindowsService.csproj", "{86C4B45D-D369-4E9E-A2D1-5700BA22DA58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientWindowsService", "ClientWindowsService\ClientWindowsService.csproj", "{86C4B45D-D369-4E9E-A2D1-5700BA22DA58}"
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "ClientWindowsService.Setup", "ClientWindowsService.Setup\ClientWindowsService.Setup.wixproj", "{AE5E9966-5423-4692-BDEC-0B6F7F3C2E26}"
 EndProject
