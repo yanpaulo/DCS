@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using DesafioIControlSmart.WebApp.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using DesafioIControlSmart.WebApp.Services;
 
 namespace DesafioIControlSmart.WebApp
 {
@@ -44,6 +45,8 @@ namespace DesafioIControlSmart.WebApp
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,6 +69,11 @@ namespace DesafioIControlSmart.WebApp
             app.UseCookiePolicy();
 
             app.UseAuthentication();
+
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<MessageHub>("/messageHub");
+            });
 
             app.UseMvc();
         }
