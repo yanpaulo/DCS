@@ -13,7 +13,7 @@ namespace DesafioControlSmart.Client
 {
     public class App
     {
-        private const string BaseUrlKey = "BaseUrl";
+        private const string ServerUrlKey = "ServerUrl";
 
         private HubConnection _connection;
         private RestHttpClient _client;
@@ -26,12 +26,12 @@ namespace DesafioControlSmart.Client
         {
             var config = new ConfigurationBuilder()
                 .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
-                .AddInMemoryCollection(new[] { new KeyValuePair<string, string>(BaseUrlKey, "http://localhost:51630") })
+                .AddInMemoryCollection(new[] { new KeyValuePair<string, string>(ServerUrlKey, "http://localhost:51630") })
                 .AddJsonFile("appsettings.json", true)
                 .AddEnvironmentVariables("DCS_")
                 .Build();
 
-            var baseUrl = config[BaseUrlKey];
+            var baseUrl = config[ServerUrlKey];
 
             _client = new RestHttpClient
             {
