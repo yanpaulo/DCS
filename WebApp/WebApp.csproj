@@ -4,6 +4,8 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <UserSecretsId>aspnet-DesafioIControlSmart.WebApp-415B06CE-A494-4C1E-B4EA-B45842393359</UserSecretsId>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <RootNamespace>DesafioControlSmart.WebApp</RootNamespace>
+    <AssemblyName>WebApp</AssemblyName>
   </PropertyGroup>
 
 
