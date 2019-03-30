@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" Name="Serviço DesafioControlSmart" Language="1033" Version="1.0.0.0" Manufacturer="" UpgradeCode="06f5ce49-049c-4dde-abe0-9df5e9107a53">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate />
+
+    <Feature Id="ProductFeature" Title="Serviço DesafioControlSmart" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+    </Feature>
+  </Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="Serviço DesafioControlSmart">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="Serviço DesafioControlSmart" />
+      </Directory>
+    </Directory>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+      <Component Id="ProductComponent">
+        
+        <ServiceInstall Id="ServiceInstaller"
+          Type="ownProcess"
+          Name="AppService"
+          DisplayName="Serviço do DesafioControlSmart"
+          Description="Serviço que simula a ativação de dispositivos controlados remotamente."
+          Start="auto"
+          ErrorControl="normal" />
+
+        <ServiceControl Id="StartService" Start="install" Stop="both" Remove="uninstall" Name="AppService" Wait="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
