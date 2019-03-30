@@ -1,5 +1,6 @@
 ﻿using DesafioIControlSmart.Data;
 using Microsoft.AspNetCore.SignalR.Client;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,14 +8,14 @@ using System.Threading.Tasks;
 using Yansoft.Rest;
 
 using static DesafioIControlSmart.Data.DataConstants;
+
 namespace DesafioIControlSmart.Client
 {
     public class App
     {
-        private const string BaseUrl = "http://localhost:51630";
+        private const string BaseUrlKey = "BaseUrl";
 
         private HubConnection _connection;
-
         private RestHttpClient _client;
 
         private App() { }
@@ -23,12 +24,22 @@ namespace DesafioIControlSmart.Client
 
         public async Task StartAsync()
         {
+            var config = new ConfigurationBuilder()
+                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                .AddInMemoryCollection(new[] { new KeyValuePair<string, string>(BaseUrlKey, "http://localhost:51630") })
+                .AddJsonFile("appsettings.json", true)
+                .AddEnvironmentVariables("DCS_")
+                .Build();
+
+            var baseUrl = config[BaseUrlKey];
+
             _client = new RestHttpClient
             {
-                BaseAddress = new Uri($"{BaseUrl}/api/")
+                BaseAddress = new Uri($"{baseUrl}/api/")
             };
+
             _connection = new HubConnectionBuilder()
-                .WithUrl($"{BaseUrl}/{HubPath}")
+                .WithUrl($"{baseUrl}/{HubPath}")
                 .Build();
 
             _connection.Closed += async (e) =>
@@ -45,11 +56,14 @@ namespace DesafioIControlSmart.Client
 
         public async Task StopAsync()
         {
-            await _connection.StopAsync();
-            await _connection.DisposeAsync();
-            _connection = null;
+            if (_connection != null)
+            {
+                await _connection.StopAsync();
+                await _connection.DisposeAsync();
+                _connection = null; 
+            }
 
-            _client.Dispose();
+            _client?.Dispose();
             _client = null;
 
 
