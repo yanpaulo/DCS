@@ -76,6 +76,7 @@ namespace DesafioIControlSmart.WebApp.Controllers
         [HttpPost]
         public async Task<ActionResult<DeviceEvent>> PostDeviceEvent(DeviceEvent deviceEvent)
         {
+            deviceEvent.Timestamp = DateTimeOffset.Now;
             _context.Update(deviceEvent);
             await _context.SaveChangesAsync();
 

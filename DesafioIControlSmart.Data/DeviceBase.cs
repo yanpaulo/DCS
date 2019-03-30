@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DesafioIControlSmart.Data
 {
-    public abstract class DeviceBase
+    public class DeviceBase
     {
         public int Id { get; set; }
 

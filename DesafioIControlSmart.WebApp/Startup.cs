@@ -14,6 +14,7 @@ using DesafioIControlSmart.WebApp.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using DesafioIControlSmart.WebApp.Services;
+using DesafioIControlSmart.Data;
 
 namespace DesafioIControlSmart.WebApp
 {
@@ -72,7 +73,7 @@ namespace DesafioIControlSmart.WebApp
 
             app.UseSignalR(routes =>
             {
-                routes.MapHub<MessageHub>("/messageHub");
+                routes.MapHub<MessageHub>($"/{DataConstants.HubPath}");
             });
 
             app.UseMvc();
