@@ -10,9 +10,9 @@ namespace DesafioControlSmart.Client
     {
         private static Random rng = new Random();
 
-        public static async Task Liga(this DeviceBase device) => await Task.Delay(rng.Next(500, 1000));
+        public static async Task Liga(this DeviceBase device) => await Task.Delay(rng.Next(5000, 10000));
 
-        public static async Task Desliga(this DeviceBase device) => await Task.Delay(rng.Next(500, 1000));
+        public static async Task Desliga(this DeviceBase device) => await Task.Delay(rng.Next(5000, 10000));
 
         
     }
