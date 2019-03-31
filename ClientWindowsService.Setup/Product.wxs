@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="*" Name="Serviço do DesafioControlSmart" Codepage="1252" Language="1046" Version="0.1.0.0" Manufacturer="CSharp" UpgradeCode="06f5ce49-049c-4dde-abe0-9df5e9107a53">
+  <Product Id="*" Name="Serviço do DesafioControlSmart" Codepage="1252" Language="1046" Version="0.1.1" Manufacturer="CSharp" UpgradeCode="06f5ce49-049c-4dde-abe0-9df5e9107a53">
     <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
     <MajorUpgrade DowngradeErrorMessage="Uma versao mais recente do [ProductName] ja esta instalada." />
